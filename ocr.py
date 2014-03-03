@@ -28,8 +28,8 @@ class SpriteIdentifier(object):
         if self.preview:
             cv2.namedWindow("Stream", cv2.WINDOW_AUTOSIZE)
             cv2.namedWindow("Game", cv2.WINDOW_AUTOSIZE)
-        self.tile_map = self.make_tilemap('red_tiles')
-        self.tile_map_outside = self.make_tilemap('red_tiles_outside')
+        self.tile_map = self.make_tilemap('gfx/crystal/font')
+        self.tile_map_outside = self.make_tilemap('gfx/crystal/ow')
 
     def make_tilemap(self, name):
         path = os.path.abspath(os.path.dirname(__file__)) + '/' + name
